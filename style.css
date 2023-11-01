@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(172, 176, 180);
+    overflow: hidden;
+}
+
+.container{
+    width: 30%;
+    height: 80%;
+    border: 5px solid black;
+    margin: auto;
+    margin-top: 5%
+}
+
+.line{
+    width:85%;
+    height: 5px;
+    background-color: black;
+    margin-top: 12%;
+}
+
+.line2{
+    margin-left:15% ;
+}
+
+.box{
+    position: absolute;
+    width: 70px;
+    height: 50px;
+    background-color: black;
+    top: 95%;
+}
+
+.white{
+    width: 70px;
+    height: 10px;
+    background-color:rgb(172, 176, 180);
+    position: absolute;
+}
+
+.white1{
+    top: 10%;
+}
+
+.white2{
+    top: 89%;
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(black,white,black,white,black,white,black,white);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    animation: circle 10s linear infinite  both;
+}
+
+@keyframes circle {
+    0%{
+        left: 36%;
+        top: 0;
+        transform: rotate(0deg);
+    }5%{
+        left: 36%;
+        top: 12%;
+        /* transform: rotate(0deg); */
+    }10%{
+        left:61% ;
+        top:12% ;
+        transform: rotate(360deg);
+    }15%{
+        left: 61%;
+        top:19.5%;
+        /* transform: rotate(340deg); */
+    }20%{
+        left: 36%;
+        top:19.5%;
+        transform: rotate(0deg);
+    }25%{
+        left: 36%;
+        top: 28%;
+        /* transform: rotate(10deg); */
+    }30%{
+        left:61%;
+        top: 28%;
+        transform: rotate(360deg);
+    }35%{
+        left: 61%;
+        top: 36%;
+        /* transform: rotate(350deg); */
+    }40%{
+        left: 36%;
+        top: 36%;
+        transform: rotate(0deg);
+    }45%{
+        left: 36%;
+        top: 44%;
+        /* transform: rotate(10deg); */
+    }50%{
+        left: 61%;
+        top: 44%;
+        transform: rotate(360deg);
+    }55%{
+        left: 61%;
+        top:52%;
+    }60%{
+        left: 36%;
+        top: 52%;
+        transform: rotate(0deg);
+    }65%{
+        left: 36%;
+        top: 60%;
+    }70%{
+        left: 61%;
+        top: 60%;
+        transform: rotate(360deg);
+    }75%{
+        left: 61%;
+        top: 68%;
+    }80%{
+        left: 36%;
+        top: 68%;
+        transform: rotate(0);
+    }85%{
+        left: 36%;
+        top: 76%;
+    }87%{
+        left: 61%;
+        top: 76%;
+        transform: rotate(360deg);
+    }92%{
+        left:61%;
+        top: 84%;
+    } 95%{
+        left: 36%;
+        top:84%;
+        transform: rotate(0deg);
+    }100%{
+        left: 36%;
+        top: 92%;
+    } 
+}
